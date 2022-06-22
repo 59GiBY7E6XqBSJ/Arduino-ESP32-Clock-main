@@ -53,8 +53,8 @@
 
 #include <HTTPClient.h>
 
-const char* ssid = "TP-Link_E02D";
-const char* password = "45647956";
+const char* ssid = "WIFI";
+const char* password = "PASSWORD";
 
 int GMTOffset = 7200;  // Replace with your GMT Offset in seconds
 int daylightOffset = 0;  // Replace with your daylight savings offset in seconds
@@ -81,7 +81,7 @@ void getRandomWord()
 {
   if (WiFi.status() == WL_CONNECTED) {
       HTTPClient http;
-      http.begin("https://cdn.russellaleksejevs.nl/clock/random.php");
+      http.begin("URL GOES HERE");
       int httpCode = http.GET();
       if (httpCode > 0) {
         while (httpCode != HTTP_CODE_OK) {
