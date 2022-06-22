@@ -1,0 +1,7 @@
+{
+    "port": "COM4",
+    "configuration": "Revision=TTGO_LoRa32_V1,FlashFreq=80,UploadSpeed=921600,DebugLevel=none",
+    "board": "esp32:esp32:ttgo-lora32",
+    "sketch": "ESP32-Clock.ino",
+    "output": "build"
+}
